@@ -19,7 +19,6 @@ const server = http.createServer(app)
 export const io = new Server(server, {
   cors: {
     origin: [
-      "http://localhost:5173",
       "https://linkedin-frontend-9rwm.onrender.com"
     ],
     credentials: true
@@ -66,3 +65,4 @@ server.listen(port, () => {
   connectDb()
   console.log("server started")
 })
+
